@@ -1,0 +1,32 @@
+#Aliases
+
+alias cdcsgit="cd ~/contentsquare/git"
+alias cdctgit="cd ~/clicktale/git"
+alias make_deploy='make -f /Users/raskin/contentsquare/Makefile -C $(pwd)'
+alias python='python3'
+
+alias ll="colorls -l --sd"
+alias lla="colorls -lA --sd"
+
+alias tmux='tmux -2'
+
+alias k="kubectl"
+alias kx="kubectx"
+alias dpsa="docker ps -a"
+
+alias showceclag="/Users/raskin/kafka_2.12-2.3.1/bin/kafka-consumer-groups.sh --bootstrap-server nv-p2-kafka-cec-rr.prod.clicktale.net:9092 --describe --group flink.cec | awk '{print \$6}' | awk '{s+=\$1} END {print s}'"
+
+# Vault Github Login
+alias vgl='vgl() {
+  if [ -z "$1" ]
+  then
+    echo Using https://scrooge.eu-west-1.csq.io
+    export VAULT_ADDR=https://scrooge.eu-west-1.csq.io;
+  else
+    echo Using https://scrooge-$1.eu-west-1.csq.io
+    export VAULT_ADDR=https://scrooge-$1.eu-west-1.csq.io;
+  fi
+  unset VAULT_TOKEN;
+  export VAULT_TOKEN=$(vault login -field=token -method=github token=$GITHUB_VAULT_TOKEN);
+  echo $VAULT_TOKEN > ~/.vault-token  };
+  vgl'

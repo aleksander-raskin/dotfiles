@@ -1,0 +1,7 @@
+zsh_terraform() {
+  # break if there is no .terraform directory
+  if [[ -f .terraform/environment ]]; then
+    local tf_workspace=$(cat .terraform/environment)
+    echo -n "行$tf_workspace"
+  fi
+}
