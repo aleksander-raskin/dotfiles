@@ -11,10 +11,8 @@ source ~/.zshenv
 source ~/.zshalias
 source ~/.zshplugins
 source ~/.zshpy
+source ~/.zshgo
 source ~/.zsh_functions
-
-GOROOT=/usr/local/Cellar/go/1.13/libexec #gosetup
-GOPATH=/Users/raskin/go #gosetup
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
