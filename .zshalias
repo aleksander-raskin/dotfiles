@@ -13,6 +13,9 @@ alias tmux='tmux -2'
 alias k="kubectl"
 alias kx="kubectx"
 alias dpsa="docker ps -a"
+alias t="terraform"
+
+alias gs="git status"
 
 alias code='open -a "Visual Studio Code"'
 

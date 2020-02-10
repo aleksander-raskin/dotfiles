@@ -13,6 +13,7 @@ source ~/.zshplugins
 source ~/.zshpy
 source ~/.zshgo
 source ~/.zsh_functions
+source ~/contentsquare/git/dev-toolbox/setup-workstation/aws-ssh.sh
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
