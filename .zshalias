@@ -16,6 +16,9 @@ alias dpsa="docker ps -a"
 alias t="terraform"
 
 alias gs="git status"
+alias gd="git diff"
+
+alias ol="~/contentsquare/ol-aws.darwin"
 
 alias code='open -a "Visual Studio Code"'
 

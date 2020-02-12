@@ -6,4 +6,5 @@ ln -sf ~/dotfiles/.zshalias ~/.zshalias
 ln -sf ~/dotfiles/.zshplugins ~/.zshplugins
 ln -sf ~/dotfiles/.zshpy ~/.zshpy
 ln -sf ~/dotfiles/.zshgo ~/.zshgo
+ln -sf ~/dotfiles/.contentsquare ~/.contentsquare
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
