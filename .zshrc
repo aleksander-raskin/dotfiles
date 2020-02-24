@@ -18,3 +18,5 @@ source ~/contentsquare/git/dev-toolbox/setup-workstation/aws-ssh.sh
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

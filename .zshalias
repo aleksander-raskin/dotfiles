@@ -1,7 +1,8 @@
 #Aliases
 
-alias cdcsgit="cd ~/contentsquare/git"
+alias cs="cd ~/contentsquare/git"
 alias cdctgit="cd ~/clicktale/git"
+alias cdgo="cd ~/.go/src/github.com/contentsquare/"
 alias make_deploy='make -f /Users/raskin/contentsquare/Makefile -C $(pwd)'
 alias python='python3'
 
@@ -14,6 +15,9 @@ alias k="kubectl"
 alias kx="kubectx"
 alias dpsa="docker ps -a"
 alias t="terraform"
+
+alias m="git checkout master"
+alias gs="git status"
 
 alias ol="~/contentsquare/ol-aws.darwin"
 
