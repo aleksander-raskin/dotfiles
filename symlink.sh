@@ -8,3 +8,5 @@ ln -sf ~/dotfiles/.zshpy ~/.zshpy
 ln -sf ~/dotfiles/.zshgo ~/.zshgo
 ln -sf ~/dotfiles/.contentsquare ~/.contentsquare
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.lightline.vim ~/.lightline.vim

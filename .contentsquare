@@ -4,3 +4,4 @@ export ARTIFACTORY_PASSWORD=$(cat ~/.artifactory_api_key)
 export GITHUB_VAULT_TOKEN=$(cat ~/.github_oauth_key)
 export GITHUB_TOKEN=$(cat ~/.github_oauth_key)
 export ANSIBLE_DIR=/Users/raskin/contentsquare/git/ansible-dev
+export AWS_PROFILE=cs-ol && export AWS_DEFAULT_PROFILE=cs-ol
