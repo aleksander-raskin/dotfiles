@@ -11,6 +11,7 @@ alias lla="colorls -lA --sd"
 
 alias tmux='tmux -2'
 alias cp=cpv
+alias cat=bat
 
 alias k="kubectl"
 alias kx="kubectx"
