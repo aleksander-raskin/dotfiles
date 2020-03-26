@@ -27,6 +27,9 @@ alias code='open -a "Visual Studio Code"'
 
 alias showceclag="/Users/raskin/kafka_2.12-2.3.1/bin/kafka-consumer-groups.sh --bootstrap-server nv-p2-kafka-cec-rr.prod.clicktale.net:9092 --describe --group flink.cec | awk '{print \$6}' | awk '{s+=\$1} END {print s}'"
 
+# Run last command with sudo
+alias please='sudo $(fc -ln -1)'
+
 # Vault Github Login
 alias vgl='vgl() {
   if [ -z "$1" ]
