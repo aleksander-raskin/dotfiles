@@ -1,34 +1,9 @@
-export TERM="xterm-256color"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-source ~/powerlevel9k/powerlevel9k.zsh-theme
-
-POWERLEVEL9K_MODE='nerdfont-complete'
-
-export PATH="$PATH:$HOME/bin:$HOME/prog/go/bin:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/bin:$HOME/prog/go/bin:$HOME/.cargo/bin:/usr/local/bin"
 export GOPATH="$HOME/prog/go"
 export EDITOR="vim"
 export DOCKER_BUILDKIT=1
 export WORDCHARS=$WORDCHARS:s:/:
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-#POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-#POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status kubecontext custom_terraform virtualenv aws time)
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_HOME_ICON='🐻'
-POWERLEVEL9K_HOME_SUB_ICON='🏠'
-POWERLEVEL9K_HIDE_BRANCH_ICON=true
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND='clear'
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND='red'
-
-POWERLEVEL9K_TIME_BACKGROUND='clear'
-POWERLEVEL9K_TIME_FOREGROUND='white'
-
-# Terraform Segment
-POWERLEVEL9K_CUSTOM_TERRAFORM="zsh_terraform"
-POWERLEVEL9K_CUSTOM_TERRAFORM_BACKGROUND=005
-POWERLEVEL9K_CUSTOM_TERRAFORM_FOREGROUND=000

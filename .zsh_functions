@@ -5,3 +5,12 @@ zsh_terraform() {
     echo -n "$tf_workspace 行"
   fi
 }
+
+function tpv(){
+  terraform plan --var-file=$1
+}
+
+function tpa(){
+  terraform apply --var-file=$1
+}
+
