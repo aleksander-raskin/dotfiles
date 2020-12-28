@@ -23,8 +23,6 @@ alias tslist='t state list | fzf | pbcopy'
 alias tsshow='t state show $(t state list | fzf)'
 alias tsrm!='t state rm $(t state list | fzf)'
 
-alias winpass='aws ec2 get-password-data --priv-launch-key ~/clicktale/git/security/Prod/nv-p1-key-infra-01.pem --cli-auto-prompt'
-
 # Terraform workspace select
 alias tws='t workspace select $(t workspace list | fzf)'
 
@@ -37,9 +35,6 @@ alias code='open -a "Visual Studio Code"'
 
 # Run last command with sudo
 alias please='sudo $(fc -ln -1)'
-
-# Github PR
-alias gpr='hub pull-request -r yohanbrun,vfoucault,vince-chenal,julesCohonner,micborens,jb-abbadie,sigua-cs,alexander-yakobov-cs'
 
 # AWS region
 alias awsregion='export AWS_REGION=$(echo us-east-1\\neu-west-1 | fzf)'

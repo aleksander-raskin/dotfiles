@@ -1,11 +1,3 @@
-zsh_terraform() {
-  # break if there is no .terraform directory
-  if [[ -f .terraform/environment ]]; then
-    local tf_workspace=$(cat .terraform/environment)
-    echo -n "$tf_workspace 行"
-  fi
-}
-
 function tpv(){
   terraform plan --var-file=$1
 }

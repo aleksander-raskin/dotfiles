@@ -1,4 +1,6 @@
 #pyenv
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 

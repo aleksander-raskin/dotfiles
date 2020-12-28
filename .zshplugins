@@ -1,19 +1,12 @@
 ### Kubectl autocomplete
 source <(kubectl completion zsh)
 
-### Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-### Zplub
+### Zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug 'wfxr/forgit'
+zplug 'djui/alias-tips'
 zplug load
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-### Antigen
-source /usr/local/share/antigen/antigen.zsh
-antigen bundle djui/alias-tips
-antigen apply

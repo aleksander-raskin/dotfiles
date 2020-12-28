@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -10,7 +12,7 @@ export TERM="xterm-256color"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/raskin/.oh-my-zsh
 
-plugins=(git docker docker-compose helm zsh-autosuggestions colored-man-pages cp z terraform)
+plugins=(git docker docker-compose zsh-autosuggestions cp z terraform)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.contentsquare
@@ -18,7 +20,7 @@ source ~/.zshenv
 source ~/.zshalias
 source ~/.zshplugins
 source ~/.zshpy
-source ~/.zshgo
+# source ~/.zshgo
 source ~/.zsh_functions
 source ~/contentsquare/git/dev-toolbox/setup-workstation/aws-ssh.sh
 
@@ -28,3 +30,5 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# zprof
