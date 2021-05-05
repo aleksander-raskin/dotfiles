@@ -1,4 +1,5 @@
 #Aliases
+alias vim="nvim"
 
 alias cs="cd ~/contentsquare/git"
 alias ct="cd ~/clicktale/git"
@@ -15,13 +16,16 @@ alias cp=cpv
 alias cat=bat
 
 alias k="kubectl"
-alias kx="kubectx"
+alias kx="kubie ctx"
 alias dpsa="docker ps -a"
 
 alias t="terraform"
 alias tslist='t state list | fzf | pbcopy'
 alias tsshow='t state show $(t state list | fzf)'
 alias tsrm!='t state rm $(t state list | fzf)'
+alias tplan="t plan --var-file"
+alias tapply="t apply --var-file"
+alias tdestroy="t apply --var-file"
 
 # Terraform workspace select
 alias tws='t workspace select $(t workspace list | fzf)'
@@ -29,15 +33,17 @@ alias tws='t workspace select $(t workspace list | fzf)'
 alias m='git checkout master'
 alias gs='git status'
 
-alias ol='~/contentsquare/ol-aws.darwin'
-
-alias code='open -a "Visual Studio Code"'
+alias ol='bash ~/dotfiles/ol.sh'
 
 # Run last command with sudo
 alias please='sudo $(fc -ln -1)'
 
 # AWS region
 alias awsregion='export AWS_REGION=$(echo us-east-1\\neu-west-1 | fzf)'
+
+# AWS profile
+alias awsprofile='export AWS_PROFILE=$(echo default\\ncsq-production\\ncsq-production-de\\ncsq-production-app\\ncsq-production-qa | fzf)'
+
 
 # Vault Github Login
 alias vgl='vgl() {

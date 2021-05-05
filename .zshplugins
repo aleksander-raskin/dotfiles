@@ -1,12 +1,19 @@
 ### Kubectl autocomplete
 source <(kubectl completion zsh)
 
+### Syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 ### Zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug 'wfxr/forgit'
 zplug 'djui/alias-tips'
+zplug 'zsh/zprof'
 zplug load
+
+alias autocompleteON='source ~/zsh_plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh'
+set completion-ignore-case on
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
