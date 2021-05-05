@@ -1,3 +1,4 @@
+export CS_USER=aleksander.raskin@contentsquare.com
 export ARTIFACTORY_URL=https://artifactory.csq.fr
 export ARTIFACTORY_USR=aleksander.raskin
 export ARTIFACTORY_PSW=$(cat ~/.artifactory_api_key)
