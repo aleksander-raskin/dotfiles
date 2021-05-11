@@ -17,6 +17,8 @@ alias cat=bat
 
 alias k="kubectl"
 alias kx="kubie ctx"
+alias kk="kubie ctx && kubie ns"
+
 alias dpsa="docker ps -a"
 
 alias t="terraform"
@@ -42,7 +44,7 @@ alias please='sudo $(fc -ln -1)'
 alias awsregion='export AWS_REGION=$(echo us-east-1\\neu-west-1 | fzf)'
 
 # AWS profile
-alias awsprofile='export AWS_PROFILE=$(echo default\\ncsq-production\\ncsq-production-de\\ncsq-production-app\\ncsq-production-qa | fzf)'
+alias awsprofile='export AWS_PROFILE=$(echo mgmt\\ncsq-production\\ncsq-production-de\\ncsq-production-app\\ncsq-production-qa | fzf)'
 
 
 # Vault Github Login

@@ -10,4 +10,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export FORGIT_FZF_DEFAULT_OPTS="--exact --border --cycle --reverse --height '80%'"
 export OP_SESSION_my="RG8tC_uNtqB53kQRqMb8Ly-xozNbfv3uAGbZRsCTKa0"
 
-#export AWS_PROFILE=mgmt
+export AWS_PROFILE=mgmt
