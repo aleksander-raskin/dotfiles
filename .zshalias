@@ -17,6 +17,7 @@ alias cat=bat
 
 alias k="kubectl"
 alias kx="kubie ctx"
+alias kns="kubie ns"
 alias kk="kubie ctx && kubie ns"
 
 alias dpsa="docker ps -a"

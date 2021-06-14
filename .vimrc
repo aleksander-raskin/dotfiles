@@ -87,6 +87,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set relativenumber
 set scrolloff=5
 set splitright
 

@@ -6,6 +6,7 @@ export VAULT_TOKEN=$(cat ~/.github_oauth_key)
 export GUTHUB_USER="aleksander-raskin"
 export GITHUB_VAULT_TOKEN=$(cat ~/.github_oauth_key)
 export GITHUB_TOKEN=$(cat ~/.github_token)
+export VAULT_ADDR=https://scrooge.eu-west-1.csq.io
 export ANSIBLE_DIR=/Users/raskin/contentsquare/git/ansible-dev
 export ANSIBLE_VAULT_PASSWORD_FILE=$HOME/.ansible_vault_passwd
 export AWS_PROFILE=cs-ol # && export AWS_DEFAULT_PROFILE=cs-ol
